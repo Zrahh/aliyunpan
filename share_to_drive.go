@@ -25,7 +25,7 @@ import (
 type(
 	ShareToDriveParam struct {
 	    
-	    AutoRename      string `json:"auto_rename"`
+	    AutoRename      bool `json:"auto_rename"`
 		// 源文件ID
 		FileId        string `json:"file_id"`
 		// share id
