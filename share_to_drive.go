@@ -90,7 +90,7 @@ func (p *PanClient) getShareToDriveBatchRequestList(param []*ShareToDriveParam) 
 		r = append(r, &BatchRequest{
 			Id:      item.FileId,
 			Method:  "POST",
-			Url:     "/file/move",
+			Url:     "/file/copy",
 			Headers: map[string]string{
 				"Content-Type": "application/json",
 			},
